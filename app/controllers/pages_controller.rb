@@ -5,10 +5,9 @@ class PagesController < ApplicationController
     @plans = current_user.lists.first.plans
     @list = current_user.lists.first
     @plan = Plan.new
-    @all_plan = Plan.where.not(title: nil)
-    @all_plan_order = @all_plan.sort.reverse[0..14]
+    @all_plan_order = Plan.where.not(title: nil).sort.reverse[0..14]
     @uncompleted_plan = Plan.where(:completion => false).sort[0..2]
-    @completed_plan = Plan.where(:completion => true).sort[0..2]
+    @completed_plan = Plan.where(:completion => true).sort.reverse[0..2]
 
     User.all.each do |user|
       if user.has_role? :admin

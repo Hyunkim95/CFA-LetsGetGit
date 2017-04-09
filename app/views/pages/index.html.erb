@@ -89,7 +89,7 @@
       <% @uncompleted_plan.each do |plan| %>
       <p>
       <%if plan.completion == false %>
-      <% if plan.title == nil %>
+      <% if plan.title == nil || plan.user.has_role?(:admin)%>
   <% else %>
         <%= plan.user.username%>
         is taking their time on:
