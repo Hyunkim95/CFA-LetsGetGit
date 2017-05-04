@@ -60,7 +60,7 @@ User could then refer the Checklist set by the Teachers as a reference to review
 <br>
 <br>
 <br>
-When the user completed a plan, their plan will be moved to the completed tab. This will allow the teachers to monitor the progress of each individual students to understand the study pattern of each individuals.
+When the user completed a plan, their plan will be moved to the completed tab. This will allow the teachers to monitor the progress of each individual students to understand the study pattern of each individuals
 <br>
 <br>
 ![alt tag](https://image.ibb.co/m8MeJ5/Screen_Shot_2017_04_10_at_12_10_35_am.png)
